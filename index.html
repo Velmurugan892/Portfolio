@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velmurugan G | Front-End & Flutter Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #6a4c93;
+      --secondary-color: #fcefee;
+      --accent-color: #ffb677;
+      --bg-color: #fff8f0;
+      --text-color: #2d2d2d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #f7e8ff;
+      color: var(--text-color);
+      line-height: 1.7;
+      font-weight: 400;
+    }
+
+    header {
+      background: linear-gradient(to right, #6a4c93, #ffb677);
+      color: var(--secondary-color);
+      padding: 4rem 2rem;
+      text-align: center;
+      clip-path: ellipse(100% 80% at 50% 20%);
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 4px solid var(--accent-color);
+      display: inline-block;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .skills-grid, .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .skill, .project {
+      background: var(--secondary-color);
+      border-left: 6px solid var(--primary-color);
+      border-radius: 14px;
+      padding: 1.75rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .skill:hover, .project:hover {
+      transform: scale(1.04);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .timeline {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .timeline li {
+      margin-bottom: 1.5rem;
+      padding-left: 1.2rem;
+      border-left: 4px solid var(--primary-color);
+      position: relative;
+      font-weight: 500;
+    }
+
+    .timeline li::before {
+      content: '';
+      position: absolute;
+      left: -8px;
+      top: 7px;
+      height: 14px;
+      width: 14px;
+      background: var(--primary-color);
+      border-radius: 50%;
+    }
+
+    footer {
+      background-color: #362f2d;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Velmurugan G</h1>
+    <p>Front-End & Flutter Developer</p>
+    <p>Turning complex problems into intuitive digital experiences</p>
+  </header>
+
+  <section class="section">
+    <h2>About Me</h2>
+    <p>Creative and detail-oriented developer with a passion for clean code, modern design, and seamless user experiences. Experienced in building cross-platform mobile and responsive web apps with Flutter, Dart, HTML/CSS, and JavaScript.</p>
+  </section>
+
+  <section class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">Flutter / Dart</div>
+      <div class="skill">UI/UX – Figma, Canva</div>
+      <div class="skill">HTML / CSS / JavaScript</div>
+      <div class="skill">Python</div>
+      <div class="skill">Java</div>
+      <div class="skill">MongoDB</div>
+      <div class="skill">SQL</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <h3>Student Portal App</h3>
+        <p>Developed a full-featured student portal with notice board, attendance, results, and leave application using Flutter.</p><br><bold>Status:Almost Finished</bold>
+      </div>
+      <div class="project">
+        <h3>Flutter-WhatsApp Clone</h3>
+        <p>Replicated core features like chat and contacts using Flutter. Emphasized on sleek UI and real-time functionality.</p><br><br><bold>Status:In-progress</bold>
+      </div>
+      <div class="project">
+        <h3>UI/UX Design – WhatsApp Clone</h3>
+        <p>Designed intuitive and visually consistent screens using Figma, complete with wireframes and mockups.</p><br><bold>Status:In-progress</bold>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Education</h2>
+    <ul class="timeline">
+      <li><strong>B.Tech in Information Technology</strong> – 2023-Present => CGPA-7.01/10 (till 6th sem)</li>
+      <li><strong>Diploma in Mechanical Engineering</strong> – 2018-2021 =>  Percentage-88%</li>
+      <li><strong>SSLC</strong> – 2017-2018 =>  Percentage-81.4%</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Completed 1000+ problems on Skillrack</li>
+      <li>Finalist at Inno-Hack (36Hrs Hackathon)</li>
+      <li>Organized and judged inter-college web design competitions</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Contact</h2>
+    <p>Email: velvelmurugan74372@gmail.com</p>
+    <p>Phone: +91 6384349025</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Velmurugan G. All rights reserved.</p>
+  </footer>
+</body>
+</html>
